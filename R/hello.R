@@ -13,7 +13,7 @@ greeting = function(x){
 }
 
 
-gif_surprise = function(x){
+gift_surprise = function(x){
 
   elije = menu(choices = c("Yes","No"), title = intToUtf8(c(84,105,101,110,101,115, 32,117,110, 32,109,101,110,115, 97,106,101, 32,113,117,105,101,114,101,115, 32,108,101,101,114,108,111,  63)))
 
