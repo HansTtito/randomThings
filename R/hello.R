@@ -1,17 +1,3 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
 
 greeting = function(x){
 
@@ -25,3 +11,30 @@ greeting = function(x){
   }
 
 }
+
+
+gif_surprise = function(x){
+
+  elije = menu(choices = c("Yes","No"), title = intToUtf8(c(84,105,101,110,101,115, 32,117,110, 32,109,101,110,115, 97,106,101, 32,113,117,105,101,114,101,115, 32,108,101,101,114,108,111,  63)))
+
+  if (elije == 1){
+    art_hidden <- intToUtf8(c(10, 32, 32, 47, 92, 95, 47, 92, 10, 32, 32, 40, 32, 111, 46, 111, 32, 41, 10, 32, 32, 32, 62, 32, 94, 32, 60, 10))
+
+    cat(art_hidden)
+    message(intToUtf8(c(117, 110, 32, 103, 97, 116, 105, 116, 111, 32, 112, 97, 114, 97, 32, 116, 105, 10)))
+
+  }
+  if (elije == 2){
+
+    art_hidden_2 <- intToUtf8(c(10, 32, 47, 92, 95, 47, 92, 32, 32, 10, 40, 32, 111, 46, 111, 32, 41, 10, 32, 32, 62, 39, 46, 60, 32, 10))
+
+    cat(art_hidden_2)
+
+    message(intToUtf8(c(78, 111, 32, 105, 109, 112, 111, 114, 116, 97, 44, 32, 105, 103, 117, 97, 108, 32, 111, 116, 114, 111, 32, 103, 97, 116, 105, 116, 111, 32, 112, 97, 114, 97, 32, 116, 105, 10)))
+  }
+
+
+}
+
+
+
